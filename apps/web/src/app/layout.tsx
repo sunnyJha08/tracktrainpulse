@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-
 import "./globals.css";
-import BgBlueRadial from "../components/layout/bg-blue-radial";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,10 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <div className="min-h-screen w-full bg-white relative overflow-hidden ">
-          <BgBlueRadial>{children}</BgBlueRadial>
-        </div>
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        {children}
       </body>
     </html>
   );

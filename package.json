@@ -1,12 +1,12 @@
 {
+  "name": "tracktrainpulse",
+  "module": "index.ts",
+  "type": "module",
   "private": true,
-  "workspaces": [
-    "src/*",
-    "packages/*"
-  ],
-  "scripts": {
-    "dev:web": "bun run --filter web dev",
-    "dev:server": "bun run --filter server dev",
-    "dev": "bun run dev:web & bun run dev:server"
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
   }
 }
